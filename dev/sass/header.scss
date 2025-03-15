@@ -1,8 +1,65 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+.header {
+    padding: 48px 0;
+    .container {
+    display: flex;
+    --gap: 94px;
+    gap: var(--gap);
+}
+
+    &-nav {
+        display: flex;
+        gap: var(--gap);
+        &__item {
+            font-size: 20px;
+            color: $color-text;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+}
+}
+
+.mobile-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-burger{
+    --width: 42px;
+    width: var(--width);
+    margin-left: auto;
+    position: relative;
+    
+
+    span {
+       @include burger;
+     &:before, 
+     &:after {
+        content: "";
+        @include burger;
+       }
+
+       &:before {
+        top: 8px;
+       }
+       &:after {
+        top: 17px;
+       }
+    }
+
+    &.active {
+        span {
+            transform: rotate(-45deg);
+        &:before {
+            opacity: 0;
+            transform: rotate(90deg) translate(-15px, 0);
+        }
+
+        &:after {
+            transform: rotate(90deg) translate(-15px, 0);
+        }
+        }
+
+    }
+
 }

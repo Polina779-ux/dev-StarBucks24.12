@@ -1,17 +1,49 @@
+html {
+    font-size: $font-size;
+    font-family: $font-primary;
+}
+
+
 body {
-    font-family: "Montserrat";
+background-color: $bg-body;
+color: $color-text;
 }
 
-.fw-400 {
-    font-weight: 400;
+section {
+    margin-bottom: $section-margin;
 }
 
-.fw-500 {
-    font-weight: 500;
+.logo{
+    max-width: 195px;
 }
-.fw-600 {
-    font-weight: 600;
+
+.container {
+max-width: 1278px;
+padding-left: 12px;
+padding-right: 12px;
+margin-left: auto;
+margin-right: auto;
 }
-.fw-800 {
-    font-weight: 800;
+
+/*important*/
+.show {
+    display: block !important; 
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+/**/
+
+::selection {
+    color: $primary-color;
+    background-color: $bg-footer;
 }
