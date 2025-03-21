@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
     .header {
-        padding: 34px 0;
+        padding: 35px 0;
         .container {
             gap: 0;
         }
@@ -17,11 +17,22 @@
 
     .logo{
         max-width: 114px;
+        margin: 2px 0 0 0;
+
     }
 
     .container {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .btn-arrow{
+        --size: 56px;
+        --icon-size: 27px;
+        --border-radius: 18px;
+        --border-width: 3px;
+        padding: 10px;
+
     }
 
     .mobile-container {
@@ -34,10 +45,56 @@
 
 
     .footer {
+        padding: 21px 0 10px;
         .logo{
             max-width: 134px;
         }
+
+        &-row {
+            &:first-child {
+            --gap: 36px;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            align-items: center;  
+            margin-bottom: var(--gap);
+            
+            .btn.btn-arrow {
+            margin-left: auto;
+        }
+    } 
     }
+
+    &-nav {
+        order: 1;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        padding: 4px 0 0 0;
+
+        &__item,
+        &__column-title {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+        
+        }  
+        
+        &-telephone {
+            font-size: 16px;
+        }
+
+        &-instagram {
+            max-width: 32px;
+        }
+    }
+
+    
 }
+
+
 
 
