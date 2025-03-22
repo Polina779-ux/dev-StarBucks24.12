@@ -18,6 +18,76 @@ section {
     margin-bottom: $section-margin;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 500;
+    line-height: 1.09;
+    color: $color-title;
+}
+
+h1, .h1{
+font-size: 80px;
+font-weight: 800;
+}
+
+h2, .h2{
+    font-size: 48px;
+}
+
+h3, .h3{
+  font-size: 32px;  
+  font-weight: 800;
+}
+
+h4, .h4{
+  font-size: 26px;  
+}
+
+h5, .h5{
+  font-size: 24px;  
+}
+
+h6, .h6{
+  font-size: 20px;  
+}
+
+.template-title{
+    margin-bottom: 56px;
+    max-width: 570px;
+    h1,
+    h2 {
+        margin-bottom: 56px;
+    }
+    
+    h2 {
+        @extend .h1; 
+    }
+
+    h6 {
+        color: $color-text;
+        font-weight: 400;
+    }
+
+    &.template-title_row, 
+    &.template-title_row-reverse
+     {
+        display: flex;
+        max-width: 908px;
+        gap: 72px;
+        align-items: center;
+
+        h1,
+        h2,
+        h6 {
+            min-width: 440px;
+            margin-bottom: 0;
+        } 
+    }
+
+    &.template-title_row-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
 a {
     color: $color-text;
     &:hover {
