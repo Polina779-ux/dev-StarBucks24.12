@@ -200,6 +200,7 @@ a {
 
 .container {
 max-width: 1278px;
+width: 100%;
 padding-left: 12px;
 padding-right: 12px;
 margin-left: auto;
@@ -212,6 +213,43 @@ margin-right: auto;
     background-image: $background-gradient;
 }
 
+
+.label {
+    --size: 184px;
+    --this-size: calc(var(--size) - 24px);
+    width: var(--this-size);
+    height: var(--this-size);
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: -4.56px 15.52px 26.48px #143e2875;
+    position: relative;
+
+     &::before{
+        content: var(--content);
+        background: url(./assets/img/label.png) center/contain no-repeat;
+        width: var(--size);
+        height: var(--size);
+        @include transform-centered;
+        @include flex-centered;
+    }
+
+     &.label_sm {
+        --size: 133px;
+        font-size: 32px;
+    }
+
+     &_text-large {
+        font-size: 62px;
+    }      
+
+    
+}
 
 
 /*important*/
