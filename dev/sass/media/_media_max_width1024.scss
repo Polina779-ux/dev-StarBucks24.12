@@ -43,6 +43,60 @@
         width: 100%;
     }
 
+    .banner {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 26px;
+        }
+
+        &-img {
+            max-width: 271px;
+        }
+    }
+
+    .template-title{
+        margin-bottom: 36px;
+       
+        h1,
+        h2 {
+            font-size: 48px;
+            margin-bottom: 36px;
+        }
+    
+        &.template-title_row, 
+        &.template-title_row-reverse
+         {
+            max-width: 767px;
+            gap: 56px;
+
+    
+            h1,
+            h2,
+            h6 {
+                min-width: 330px;
+                margin-bottom: 0;
+            } 
+        }
+    
+        &.template-title_row-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .label {
+        --size: 82px;
+        font-size: 18px;
+    
+         &.label_sm {
+            --size: 82px;
+            font-size: 18px;
+        }
+    
+         &label_text-large {
+            font-size: 24px;
+        }         
+    }
 
     .footer {
         padding: 21px 0 10px;
@@ -91,6 +145,7 @@
             max-width: 32px;
         }
     }
+
 
     
 }

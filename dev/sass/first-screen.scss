@@ -1,4 +1,5 @@
 .banner { 
+    padding-top: 126px;
     .container {
     display: flex;
     justify-content: space-between;
@@ -34,11 +35,12 @@ gap: 46px;
 }
 
 &-img {
+    max-width: 472px;
     position: relative;
     .label {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 12px;
+        right: 24px;
     }
 }
 }
