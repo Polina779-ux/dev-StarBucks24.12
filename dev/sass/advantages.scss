@@ -1,0 +1,54 @@
+.advantages {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+    box-shadow: 0 25px 51px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 46px;
+    padding: 36px 78px;
+    margin: 0 auto $section-margin;
+    max-width: 962px;
+
+    .label{
+        top: -42px;
+        left: -42px;
+        position: absolute;
+    }
+}
+
+.advantage{
+    text-align: center;
+
+    &-img {
+        --size: 148px;
+        width: var(--size);
+        height: var(--size);
+        background-image: $background-gradient;
+        border-radius: 50%;
+        box-shadow: 0 4px 41px 0 rgb(0 0 0 / 39%);
+        margin: 0 auto 12px;
+        position: relative;
+        img {
+            --size: 160px;
+            width: var(--size);
+            min-width: var(--size);
+            height: var(--size);
+            object-fit: contain;
+            @include transform-centered;
+        }
+    }
+    
+    &-title {
+        color: $bg-body;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    
+    &-description {
+        color: $bg-body-secondary;
+        font-weight: 400;
+        line-height: 163%;
+    }
+}
+

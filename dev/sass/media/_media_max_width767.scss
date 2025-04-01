@@ -36,6 +36,37 @@ h6, .h6 {
 }
 }
 
+.advantages {
+   flex-direction: column;
+   max-width: 260px;
+   margin: 0 auto $section-mobile-margin;
+   padding: 32px 42px;
+   border-radius: 26px;
+.label{
+    left: auto;
+    right: -3px;
+    top: -33px;
+    transform: rotate(15deg) translate(-10%, -10%);
+}
+}
+
+
+.advantage-img {
+    --size: 86px; 
+
+    img {
+    --size: 128px;
+    }
+}
+
+.advantage-title {
+    font-size: 22px;
+}
+
+.advantage-description {
+    font-size: 14px;
+}
+
 .label {
     --size: 82px;
     font-size: 18px;
@@ -49,4 +80,6 @@ h6, .h6 {
         font-size: 24px;
     }         
 }
+
+
 }

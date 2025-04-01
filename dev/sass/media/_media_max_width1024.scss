@@ -98,6 +98,24 @@
         }         
     }
 
+    .advantages {
+        margin: 0 25px 100px;
+        padding: 36px 48px;
+    }
+        
+    .advantage-img {
+            --size: 120px;
+        img {
+            --size: 140px;
+        }
+    }
+
+    .advantage-title {
+            font-size: 28px;
+    }
+   
+
+
     .footer {
         padding: 21px 0 10px;
         .logo{
