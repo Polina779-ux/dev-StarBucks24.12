@@ -1,7 +1,10 @@
 const burger = document.querySelector('.btn-burger');
-const mobileContainer = document.querySelector('.mobile-container')
+const mobileContainer = document.querySelector('.mobile-container');
 
-burger.addEventListener('click', ()=> {
-    burger.classList.toggle('active')
-    mobileContainer.classList.toggle('show')
-})
+function showMobileContainer() {
+    mobileContainer.classList.toggle('d-block'); 
+    burger.classList.toggle('active');
+}
+
+burger.addEventListener('click', showMobileContainer);
+
