@@ -8,3 +8,14 @@ function showMobileContainer() {
 
 burger.addEventListener('click', showMobileContainer);
 
+const swiper = new Swiper('.swiper-product', {
+    slidesPerView: 4,
+    loop: true,
+    speed: 500,
+    spaceBetween: 48,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
