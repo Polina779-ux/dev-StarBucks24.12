@@ -5,9 +5,9 @@
     padding: var(--size);
     background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
     overflow: auto;
-    scrollbar-width: none;
+    scrollbar-width: none; 
 
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar { 
         width: 0px;
         background: rgba(255, 255, 255, 0.0);
     }
