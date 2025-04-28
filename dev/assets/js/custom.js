@@ -41,3 +41,21 @@ const swiper = new Swiper('.swiper-product', {
       }
   }
 });
+
+const swiperEvents = new Swiper('.swiper-events', {
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-events-button-next',
+        prevEl: '.swiper-events-button-prev',
+    },
+})
+
+function checkMediaQuery() {
+    if (window.matchMedia("(min-width: 1025px)").matches) {
+       swiperEvents.destroy();
+    }  
+}
+  
+checkMediaQuery()
+window.addEventListener('resize', checkMediaQuery);
